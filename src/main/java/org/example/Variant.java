@@ -13,6 +13,9 @@ public class Variant {
         this.ref = ref;
         this.alt = alt;
     }
+    public Variant() {
+
+    }
 
     public String getVarintAsString() {
         return chr + "-" + pos + "-" + ref + "-" + alt;

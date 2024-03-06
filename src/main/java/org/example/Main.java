@@ -74,9 +74,19 @@ public class Main {
             System.out.println(strings.get(i));
         }
 
+        System.out.println(strings.get(0));
         for (String s: strings) {
             System.out.println(s);
         }
+
+        List<String> infinite = List.of("A", "B", "C", "D", "E"); //in parallel we continuously add a new item into list each second
+        while (infinite.size() < 1000000) {
+            System.out.println("s");
+        }
+
+        do {
+            System.out.println("s");
+        } while (true);
     }
 
     private static void getNothing(String text) {

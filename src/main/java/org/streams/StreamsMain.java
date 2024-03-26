@@ -27,7 +27,7 @@ public class StreamsMain {
             }
         }
 
-        strings.stream().filter(v -> v.contains("A")).findFirst();*/
+        strings.stream().filter(v -> v.contains("A")).findFirst();*/ //findAny()
 
         List<Variant> variants = List.of(
                 new Variant("X", 68957345, "C", "T"),
@@ -62,11 +62,21 @@ public class StreamsMain {
         try {
             myReader = new Scanner(myObj);
         } catch (FileNotFoundException e) {
-
+            System.out.println("Exception is: " + e);
         }
         finally {
             System.out.println();
         }
+        while (myReader.hasNextLine()) {
+            String data = myReader.nextLine();
+            System.out.println(data);
+        }
+        myReader.close();
+    }
+
+    void readFile1(String fileName) throws FileNotFoundException {
+        File myObj = new File(fileName);
+        Scanner myReader = new Scanner(myObj);;
         while (myReader.hasNextLine()) {
             String data = myReader.nextLine();
             System.out.println(data);

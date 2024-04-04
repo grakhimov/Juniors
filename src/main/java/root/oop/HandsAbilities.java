@@ -1,4 +1,4 @@
-package org.oop;
+package root.oop;
 
 public interface HandsAbilities {
     void wave();

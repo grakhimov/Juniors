@@ -1,4 +1,4 @@
-package org.example;
+package root.example;
 
 public class Variant {
     private String chr;

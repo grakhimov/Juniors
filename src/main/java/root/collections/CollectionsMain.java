@@ -1,7 +1,6 @@
-package org.collections;
+package root.collections;
 
-import com.sun.source.tree.Tree;
-import org.example.Variant;
+import root.example.Variant;
 
 import java.util.*;
 

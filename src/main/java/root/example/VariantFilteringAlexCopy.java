@@ -1,4 +1,4 @@
-package org.example;
+package root.example;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class VariantFilteringAlexCopy {
                 System.out.println(variant.getVariantAsStringHG38());
             }
                 else {
-                    System.out.println(variant.getVariantAsString());
+                    System.out.println(variant.getVarintAsString());
                 }
         }
 

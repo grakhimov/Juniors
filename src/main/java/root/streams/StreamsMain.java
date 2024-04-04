@@ -1,6 +1,6 @@
-package org.streams;
+package root.streams;
 
-import org.example.Variant;
+import root.example.Variant;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class StreamsMain {
 

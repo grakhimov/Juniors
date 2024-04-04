@@ -1,4 +1,4 @@
-package org.example;
+package root.example;
 
 public class FizzBuzz {
     public static void main(String[] args) {

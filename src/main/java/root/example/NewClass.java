@@ -1,6 +1,4 @@
-package org.example;
-
-import static org.example.Main.*;
+package root.example;
 
 public class NewClass {
     private int a;

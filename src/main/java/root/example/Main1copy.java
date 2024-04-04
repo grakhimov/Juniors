@@ -1,12 +1,12 @@
-package org.example;
+package root.example;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 import java.util.List;
 
-public class Main1copy {
-    static int abc;
+public class Main1copy {}
+/*    static int abc;
     private static String str;
 
     public static void main(String[] args) {  // public static void main  можно назвать функцией
@@ -53,7 +53,7 @@ public class Main1copy {
             }
 
 
-        }
+        }*/
 
 
 

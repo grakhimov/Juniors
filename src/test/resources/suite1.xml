@@ -3,9 +3,10 @@
 <suite name="Practice Suite">
     <test name="Test Basics 1">
         <classes>
-            <class name="baseTest.BaseTest">
+            <class name="baseTest.TestTrello">
                 <methods>
-                    <include name="test1"/>
+                    <include name="getUserTest"/>
+                    <exclude name="nonExistingTest"/>
                 </methods>
             </class>
         </classes>

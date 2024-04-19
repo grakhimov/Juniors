@@ -5,8 +5,6 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import root.Configuration;
 import root.trello.User;
 
@@ -29,17 +27,16 @@ public class BaseTrelloTest {
             .log(LogDetail.BODY)
             .build();
 
-    protected static final String BASE_URL = "https://api.trello.com/";
-    protected static final String USER_URL = "1/members/me";
+    protected static final String BASE_URL = "https://api.trello.com";
+    protected static final String USER_URI = "/1/members/me";
 
     protected User getUser() {
         return given()
                 .spec(requestSpecification)
                 .when()
-                .get(USER_URL)
+                .get(USER_URI)
                 .then()
                 .spec(responseSpecification)
-                .statusCode(200)
                 .extract().response().as(User.class);
     }
 }
